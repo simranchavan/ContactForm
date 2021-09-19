@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "open sans",sans-serif;
+   }
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    width: 100%;
+    background: #061e27;
+}
+section::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(#ffeb3b,#e91e63);
+    border-radius: 50%;
+    transform: translate(-420px,-180px);
+}/*
+section::after{
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(#2196f3,#83dBff);
+    border-radius: 50%;
+    transform: translate(400px,180px);
+}*/
+.submit{
+    border-radius: 10px;
+}
+.container{
+    color: seashell;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+    border:1px solid rgba(255,255,255,0.25);
+    border-right:1px solid rgba(255,255,255,0.1);
+    border-right:1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+
+}/*
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgda(255,255,255,0.05);
+    pointer-events: none;
+    transform: skewY(-15deg);
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    color: seashell;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.container .row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.container .col .inputbox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: seashell;
+}
+*/
+label{
+    padding-right: 20px;
+    margin-bottom: 5px;
+}
+input[type=submit],input[type=text],input[type=date],input[type=number],input[type=email],textarea,input[type=file]{
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: auto;
+    height: 28px;
+}
+span{
+    color: red;
+    margin-left: 5px;
+    font-size: 13px;
+}
+.submit{
+    margin-left: 50%;
+    align-items: center;
+    color: cadetblue;
+  
+}
